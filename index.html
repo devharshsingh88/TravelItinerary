@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore and organize your ultimate travel destination packages.">
+  <title>Travel Itinerary Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-container">
+      <h1>🌍 Travel Explorer</h1>
+      <p>Discover & Plan Your Next Adventure</p>
+    </div>
+    
+    <div class="controls">
+      <div class="control-group">
+        <label for="search" class="sr-only">Search</label>
+        <input type="text" id="search" placeholder="Search destinations...">
+      </div>
+
+      <div class="control-group">
+        <label for="continentFilter" class="sr-only">Filter by continent</label>
+        <select id="continentFilter">
+          <option value="All">All Continents</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="North America">North America</option>
+          <option value="South America">South America</option>
+          <option value="Africa">Africa</option>
+          <option value="Australia">Australia</option>
+        </select>
+      </div>
+
+      <div class="control-group">
+        <label for="sort" class="sr-only">Sort by</label>
+        <select id="sort">
+          <option value="">Sort By</option>
+          <option value="lowPrice">Price: Low → High</option>
+          <option value="highPrice">Price: High → Low</option>
+          <option value="rating">Rating: High → Low</option>
+        </select>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="main-content">
+      <h2 class="section-title">Available Packages</h2>
+      <div id="cardsContainer" class="cards">
+        <!-- Cards injected via JS -->
+      </div>
+    </section>
+
+    <aside class="sidebar">
+      <div class="sidebar-sticky">
+        <h2>✈️ My Trip</h2>
+        <p class="trip-subtitle">Your selected packages</p>
+        <ul id="tripList" class="trip-list">
+          <!-- Trip items injected via JS -->
+        </ul>
+        <div id="emptyTripMessage" class="empty-trip">
+          No packages added yet.
+        </div>
+      </div>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
