@@ -138,36 +138,6 @@ TravelItinerary/
 
 5. The app will open automatically in your default browser at `http://127.0.0.1:5500`.
 
-### Option 2 — Python HTTP Server
-
-```bash
-# Navigate to the project directory
-cd TravelItinerary
-
-# Python 3
-python -m http.server 8000
-
-# Then open http://localhost:8000 in your browser
-```
-
-### Option 3 — Node.js HTTP Server
-
-```bash
-# Install a simple HTTP server globally (one time)
-npm install -g http-server
-
-# Navigate to the project folder and start
-cd TravelItinerary
-http-server -p 8080
-
-# Open http://localhost:8080 in your browser
-```
-
-### Option 4 — Open Directly (Limited)
-
-> ⚠️ **Note:** Opening `index.html` directly via `file://` will cause the `fetch()` call to fail due to CORS restrictions. Use one of the server options above.
-
----
 
 ## 📖 Usage Guide
 
